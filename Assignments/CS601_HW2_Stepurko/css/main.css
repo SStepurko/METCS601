@@ -4,12 +4,17 @@
     --backgroundColor: #f8fafc;
     --textColor: #0f172a;
     --max-width: 1100px;
+    --mediumScreenWidth: 600px;
+    --smallScreenWidth: 300px;
     --fonts: 'Roboto', sans-serif;
+    --headerMargin: 10px;
+    --headerPadding: 15px;
+    --linkVisitedColor: grey;
 }
 
 header {
-    margin: 10px;
-    padding: 15px;
+    margin: var(--headerMargin);
+    padding: var(--headerPadding);
     background-image: url("../resources/header-background.jpg");
     max-width: var(--max-width);
 }
@@ -36,9 +41,8 @@ a:hover {
 }
 
 a:visited {
-    color: gray;
+    color: var(--linkVisitedColor);
 }
-
 
 .avatar {
     width: 200px;
@@ -94,19 +98,18 @@ p {
 /* Smartphones */
 @media (min-width: 320px) and (max-width: 500px) {
     .big-picture {
-        max-width: 300px;
+        max-width: var(--smallScreenWidth);
     }
     #About_me {
         display: block;
         text-align: center;
     }
-    
 }
 
 /* iPads */
 @media (min-width: 650px) and (max-width: 1024px) {
     .big-picture {
-        max-width: 600px;
+        max-width: var(--mediumScreenWidth);
     }
 }
 
