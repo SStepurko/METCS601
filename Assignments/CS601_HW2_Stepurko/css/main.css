@@ -2,6 +2,7 @@
 
 :root {
     --backgroundColor: #f8fafc;
+    --footerColor: hsl(240, 31%, 57%);
     --textColor: #0f172a;
     --max-width: 1100px;
     --mediumScreenWidth: 600px;
@@ -29,6 +30,7 @@ body {
 
 footer {
     font-size: small;
+    background-color: var(--footerColor);
 }
 
 a {
@@ -63,6 +65,7 @@ p {
 }
 
 .header-link {
+    color: darkblue;
     font: 24px Arial, bold;
 }
 
