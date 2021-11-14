@@ -7,44 +7,50 @@
 		<meta name="keywords" content="BU, CS601, web application development course">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sergei Stepurko site</title>
+		<!-- CSS import -->
+		<link rel="stylesheet" href="./css/main.css">
 	</head>
 
 	<body>
 
-    <header>Navigation bar
-			<nav>
-				<a href="index.html" aria-label="Home">Home</a> | 
+    <header>
+			<p class="header-link">Sergei Stepurko</p>
+			<nav class="nav-bar">
+				<a href="index.html" aria-label="Home">Home</a> |
 				<a href=hobby.html aria-label="Hobby">Hobby</a> |
 				<a href=work.html aria-label="Work experience">Work experience</a>
 			</nav>
 		</header>
+		
+		<hr>
 
 		<main>
 			<article>
+				
 				<h1>Hello! I'm Sergei Stepurko</h1>
-
 				<section id="About_me">
-					<h2>About me</h2>
-					<p>I am 38 years old and live in Russia. I have been working in the IT field for over 15 years.</p>
-					<img src="./resources/me.jpg" alt="Sergei Stepurko photo">
+					<img class="avatar" src="./resources/me.jpg" alt="Sergei Stepurko photo">
+					<div class="info-text">
+						<h2>About me</h2>
+						<p>I am 38 years old and live in Russia. I have been working in the IT field for over 15 years.</p>
+					</div>
 				</section>
+				
+				<hr>
 				
 				<section id="Hobby">
 					<h2>Hobby</h2>
-					<p>
-						I have an unusual hobby - in my spare time I breed lizards. <br>
-						You can read more about them <a href="./hobby.html">here</a>
-					</p>
+					<p>I have an unusual hobby - in my spare time I breed lizards.</p>
+					<p class="bigger">You can read more about them <a href="./hobby.html">here</a></p>
 				</section>
+
+				<hr>
 				
 				<section id="Work">
 					<h2>My work</h2>
-					<p>
-						I work as a Senior Support Engineer for an international company and provide support for cloud-based contact center products. <br>
-						You can read more about my work
-						<a href="./work.html"> here</a>
-					</p>
-					<h2>My areas of knowledge</h2>
+					<p>I work as a Senior Support Engineer for an international company and provide support for cloud-based contact center products.</p>
+					<p class="bigger">You can read more about my work <a href="./work.html">here</a></p>
+					<h3>My areas of knowledge</h3>
 					<dl>
 						<dt>Hardware</dt>
 						<dd>Assembly, configuration, maintenance of computers and servers; Design, construction, adjustment of computer networks</dd>
@@ -57,6 +63,8 @@
 					</dl>
 				</section>
 				
+				<hr>
+
 				<section id="Learn">
 					<h2>Education</h2>
 					<p>
@@ -71,6 +79,8 @@
 						<li><a href="https://www.bu.edu/csmet/academic-programs/courses/cs673/" target="_blank" rel="noreferrer noopener">MET CS673</a></li>
 					</ul>
 				</section>
+
+				<hr>
 
 				<section id="GitHub">
 					<h3>My GitHub</h3>

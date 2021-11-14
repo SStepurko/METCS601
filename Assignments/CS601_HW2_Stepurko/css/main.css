@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+:root {
+    --backgroundColor: #f8fafc;
+    --textColor: #0f172a;
+    --max-width: 1100px;
+    --fonts: 'Roboto', sans-serif;
+}
+
+header {
+    margin: 10px;
+    padding: 15px;
+    background-image: url("../resources/header-background.jpg");
+    max-width: var(--max-width);
+}
+
+body {
+    font-family: var(--fonts);
+    background-color: var(--backgroundColor);
+    color: var(--textColor);
+    max-width: var(--max-width);
+    margin: auto;
+}
+
+footer {
+    font-size: small;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:visited {
+    color: gray;
+}
+
+
+.avatar {
+    width: 200px;
+    border-radius: 20px;
+}
+
+p {
+    padding-left: 1ex;
+}
+
+.bigger {
+    font-size: larger;
+}
+
+.nav-bar {
+    max-width: var(--max-width);
+    width: 90vw;
+}
+
+.header-link {
+    font: 24px Arial, bold;
+}
+
+#About_me {
+    display: flex;
+}
+
+.info-text {
+    margin-left: 20px;
+}
+
+.info-text h2 {
+    margin-left: 10px;
+    margin-bottom: 35px;
+}
+
+
+#Employers {
+    background-color: antiquewhite;
+    border-radius: 10px;
+    padding: 10px;
+    font: 1em sans-serif;
+}
+
+.work-table {
+    width: 100%;
+}
+
+.work-table td {
+    padding-bottom: 10px;
+}
+
+/* Smartphones */
+@media (min-width: 320px) and (max-width: 500px) {
+    .big-picture {
+        max-width: 300px;
+    }
+    #About_me {
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+/* iPads */
+@media (min-width: 650px) and (max-width: 1024px) {
+    .big-picture {
+        max-width: 600px;
+    }
+}
+
+/* Desktops */
+@media (min-width: 1224px) {
+    .big-picture {
+        max-width: var(--max-width);    
+    }
+}
