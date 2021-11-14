@@ -13,6 +13,8 @@
     --linkVisitedColor: grey;
 }
 
+/* General tags */
+
 header {
     margin: var(--headerMargin);
     padding: var(--headerPadding);
@@ -33,6 +35,8 @@ footer {
     background-color: var(--footerColor);
 }
 
+
+/* Links styles */
 a {
     color: black;
     text-decoration: none;
@@ -46,6 +50,7 @@ a:visited {
     color: var(--linkVisitedColor);
 }
 
+/* My photo */
 .avatar {
     width: 200px;
     border-radius: 20px;
@@ -59,6 +64,7 @@ p {
     font-size: larger;
 }
 
+/* header nav bar */
 .nav-bar {
     max-width: var(--max-width);
     width: 90vw;
@@ -69,6 +75,7 @@ p {
     font: 24px Arial, bold;
 }
 
+/* about me to fit photo and text */
 #About_me {
     display: flex;
 }
@@ -82,7 +89,7 @@ p {
     margin-bottom: 35px;
 }
 
-
+/* working experience style */
 #Employers {
     background-color: antiquewhite;
     border-radius: 10px;
@@ -98,6 +105,7 @@ p {
     padding-bottom: 10px;
 }
 
+/* different screen sizes */
 /* Smartphones */
 @media (min-width: 320px) and (max-width: 500px) {
     .big-picture {
