@@ -1,9 +1,23 @@
+:root {
+	--main-color: rgba(216, 13, 13, 0.493);
+	--bg-color: black;
+}
+
 body {
+	background: var(--bg-color);
+	color: var(--main-color);
 	display: grid;
 	place-items: center;
-	min-height: 200px;
+	min-height: 300px;
 }
 
 .button {
+	font-size: 5rem;
+	display: inline-block;
+	text-decoration: none;
+	color: currentColor;
+	border: currentColor 0.2em solid;
+	border-radius: 0.25em;
+	padding: 0.25em 1em;
 	cursor: pointer;
 }
