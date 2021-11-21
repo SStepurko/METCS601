@@ -1,0 +1,9 @@
+body {
+	display: grid;
+	place-items: center;
+	min-height: 200px;
+}
+
+.button {
+	cursor: pointer;
+}
