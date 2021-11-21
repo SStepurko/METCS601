@@ -1,6 +1,6 @@
 :root {
-	--main-color: rgba(216, 13, 13, 0.493);
-	--bg-color: black;
+	--main-color: rgba(138, 7, 190, 0.87);
+	--bg-color: rgba(0, 0, 0, 0.733);
 }
 
 body {
@@ -15,9 +15,17 @@ body {
 	font-size: 5rem;
 	display: inline-block;
 	text-decoration: none;
-	color: currentColor;
-	border: currentColor 0.2em solid;
+	color: var(--main-color);
+	border: var(--main-color) 0.15em solid;
 	border-radius: 0.25em;
 	padding: 0.25em 1em;
 	cursor: pointer;
+	text-shadow: 0 0 0.2em rgba(245, 245, 245, 0.527), 0 0 0.3em var(--main-color);
+}
+
+.button:hover,
+.button:focus {
+	background: var(--main-color);
+	color: var(--bg-color);
+	text-shadow: none;
 }

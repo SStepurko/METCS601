@@ -4,6 +4,12 @@ function start() {
   alertUser("Hello");
   userName = askUser("Please input your name");
   alertUser("Welcome " + userName);
+	let userInput = askUser(userName + " enter two numbers with ',' as a separator");
+	let userNumbers = userInput.split(",");
+	let result = addTwoNumbers(userNumbers[0], userNumbers[1]);
+	console.log(typeof(result));
+	alertUser("Result is " + result);
+	alertUser(checkResult(result));
 }
 
 function askUser(msg) {
@@ -13,6 +19,14 @@ function askUser(msg) {
 
 function alertUser(msg) {
 	alert(msg);
+}
+
+function checkResult(result) {
+	if (result > 10) {
+		return "That is a big number";
+	} else {
+		return "That is a small number";
+	}
 }
 
 
