@@ -4,12 +4,16 @@ function start() {
   alertUser("Hello");
   userName = askUser("Please input your name");
   alertUser("Welcome " + userName);
+	doSum();
+}
+
+function doSum() {
 	let userInput = askUser(userName + " enter two numbers with ',' as a separator");
 	let userNumbers = userInput.split(",");
 	let result = addTwoNumbers(userNumbers[0], userNumbers[1]);
-	console.log(typeof(result));
 	alertUser("Result is " + result);
 	alertUser(checkResult(result));
+	ranOneMore();
 }
 
 function askUser(msg) {
@@ -29,17 +33,16 @@ function checkResult(result) {
 	}
 }
 
-
-// let userInput = prompt(userName + " please enter two numbers with ',' as separator");
-// userNumbers = userInput.split(",");
-// let result = addTwoNumbers(userNumbers[0], userNumbers[1]);
+function ranOneMore() {
+	if (confirm(name + " do you want to sum more?")) {
+		doSum();
+	} else {
+		alertUser("Bye " + userName);
+	}
+}
 
 function addTwoNumbers(firstNumber, secondNumber) {
     firstNumber = Number(firstNumber);
     secondNumber = Number(secondNumber);
     return firstNumber + secondNumber;
 }
-
-// alert("result is " + result);
-
-// console.log(userNumbers);
