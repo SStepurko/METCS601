@@ -8,17 +8,34 @@ function start() {
 }
 
 function doSum() {
-	let userInput = askUser(userName + " enter two numbers with ',' as a separator");
+	do {
+		userInput = askUser(userName + " enter two numbers with ',' as a separator");
+	} while (!isValid(userInput));
 	let userNumbers = userInput.split(",");
 	let result = addTwoNumbers(userNumbers[0], userNumbers[1]);
-	alertUser("Result is " + result);
-	alertUser(checkResult(result));
+	if (isNaN(result)) {
+		alertUser("Not a numbers")
+	} else {
+		alertUser("Result is " + result);
+		alertUser(checkResult(result));
+	}
 	ranOneMore();
 }
 
 function askUser(msg) {
-	let input = prompt(msg);
+	do {
+		input = prompt(msg);
+	} while (input == null || input.length == 0);
 	return input;
+}
+
+function isValid(str) {
+  var validRegex = /\d*\,\d*/;
+  if (str.match(validRegex)) { 
+    return true;
+  } else {      
+    return false;
+  }
 }
 
 function alertUser(msg) {
@@ -34,7 +51,7 @@ function checkResult(result) {
 }
 
 function ranOneMore() {
-	if (confirm(name + " do you want to sum more?")) {
+	if (confirm(userName + " do you want to sum more?")) {
 		doSum();
 	} else {
 		alertUser("Bye " + userName);
