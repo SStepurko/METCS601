@@ -4,44 +4,57 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Document</title>
+	<title>Week4</title>
+	<link rel="stylesheet" href="style.css">
+	<script defer src="main.js"></script>
 </head>
 <body>
-	<form action="http://bucs601.com/submit.php" method="post">
-		<div>
-			<label for="firstName">Your first name</label>
-			<input type="text" name="firstName" id="firstName" placeholder="First name" required minlength="2">
-		</div>
-		<div>
-			<label for="lastName">Your last name</label>
-			<input type="text" name="lastName" id="lastName" placeholder="Last name" required minlength="2">
-		</div>
-		<div>
-			<label for="facilitator">Your facilitators first name</label>
-			<input type="text" name="facilitator" id="facilitator" placeholder="Facilitator" required>
-		</div>
-		<div>
-			Share your level of happiness
-			<div>
-				<label for="veryHappy">Very happy</label>
-				<input type="radio" name="happiness" id="veryHappy" value="Very Happy">
-				<label for="averageHappy">Average happy</label>
-				<input type="radio" name="happiness" id="averageHappy" value="Average Happy">
+
+	<header>
+		<h1>Week4 Stepurko</h1>
+	</header>
+
+	<main>
+		<form action="https://bucs601.com/submit.php" method="post" id="form" class="form">
+			<h2>Input your info</h2>
+			<div class="form-frame">
+				<label for="firstName">Your first name</label><br>
+				<input type="text" name="firstName" id="firstName" placeholder="First name" required minlength="2">
 			</div>
-		</div>
-		<div>
-			I know the following in web development
-			<div>
-				<input type="checkbox" name="language" id="html" value="HTML">
-				<label for="html">HTML</label><br>
-				<input type="checkbox" name="language" id="css" value="CSS">
-				<label for="css">CSS</label><br>
-				<input type="checkbox" name="language" id="javascript" value="JavaScript">
-				<label for="javascript">JavaScript</label>
+			<div class="form-frame">
+				<label for="lastName">Your last name</label><br>
+				<input type="text" name="lastName" id="lastName" placeholder="Last name" required minlength="2">
 			</div>
-		</div>
-		<button type="reset">Reset</button>
-		<button type="submit">Submit</button>
-	</form>
-</body>
+			<div class="form-frame">
+				<label for="facilitator">Your facilitators first name</label><br>
+				<input type="text" name="facilitator" id="facilitator" placeholder="Facilitator" required>
+			</div>
+
+			<div>
+				<h2>Share your level of happiness</h2>
+				<div class="form-frame">
+					<label for="veryHappy">Very happy</label>
+					<input type="radio" name="happiness" id="veryHappy" value="Very Happy">
+					<label for="averageHappy">Average happy</label>
+					<input type="radio" name="happiness" id="averageHappy" value="Average Happy">
+				</div>
+			</div>
+
+			<div>
+				<h2>I know the following</h2>
+				<div class="form-frame">
+					<input type="checkbox" name="language" id="html" value="HTML">
+					<label for="html">HTML</label><br>
+					<input type="checkbox" name="language" id="css" value="CSS">
+					<label for="css">CSS</label><br>
+					<input type="checkbox" name="language" id="javascript" value="JavaScript">
+					<label for="javascript">JavaScript</label>
+				</div>
+			</div>
+
+			<button type="reset">Reset</button>
+			<button type="submit">Submit</button>
+		</form>
+	</main>
+	</body>
 </html>

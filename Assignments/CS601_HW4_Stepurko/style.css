@@ -1,0 +1,30 @@
+body {
+	background-color: aquamarine;
+}
+
+header {
+	background-color: aqua;
+	width: 250px;
+	border-radius: 5px;
+}
+
+main {
+	background-color: azure;
+	border-radius: 5px;
+	width: 450px;
+	max-width: 100%;
+}
+
+.form {
+	padding: 30px 40px;
+}
+
+.form-frame {
+	margin-bottom: 10px;
+	padding-bottom: 15px;
+}
+
+.form-frame input {
+	border: 2px solid green;
+	border-radius: 4px;
+}
