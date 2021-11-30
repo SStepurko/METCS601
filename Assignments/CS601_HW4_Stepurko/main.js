@@ -10,6 +10,11 @@ form.addEventListener('submit', (e) => {
 	}
 });
 
+function showError(input) {
+	const formFrame = input.parentElement;
+	formFrame.className = 'from-frame error';
+}
+
 // check 3 fields to enable submit
 function fieldsValid() {
 	let isValid = false;
@@ -36,7 +41,7 @@ function isValidFacilitator() {
 	if (name === 'Laura' || name === 'Fazil' || name === 'Harsh') {
 		return true;
 	} else {
-		alert('Check facilitator name');
+		showError(facilitator);
 		return false;
 	}
 }
