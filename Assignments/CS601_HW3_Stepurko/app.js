@@ -1,4 +1,4 @@
-var userName;
+let userName;
 
 function start() {
   alertUser("Hello");
@@ -8,6 +8,7 @@ function start() {
 }
 
 function doSum() {
+	let userInput;
 	do {
 		userInput = askUser(userName + " enter two numbers with ',' as a separator");
 	} while (!isValid(userInput));
@@ -23,19 +24,16 @@ function doSum() {
 }
 
 function askUser(msg) {
+	let input;
 	do {
 		input = prompt(msg);
-	} while (input == null || input.length == 0);
+	} while (input == null || input.length === 0);
 	return input;
 }
 
 function isValid(str) {
-  var validRegex = /\d*\,\d*/;
-  if (str.match(validRegex)) { 
-    return true;
-  } else {      
-    return false;
-  }
+	const validRegex = /^\d*,\d*/;
+	return !!str.match(validRegex);
 }
 
 function alertUser(msg) {
