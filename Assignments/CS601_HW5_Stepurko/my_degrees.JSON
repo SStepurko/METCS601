@@ -2,26 +2,26 @@
 	"my_degree": [
 		{
 			"institution": {
-				"School": null,
-				"Program": null,
-				"Type": null,
-				"Year": null
+				"School": "177 high school",
+				"Program": "General",
+				"Type": "High school",
+				"Year": 2000
 			}
 		},
 		{
 			"institution": {
-				"School": null,
-				"Program": null,
-				"Type": null,
-				"Year": null
+				"School": "Moskovskiy Politekhnicheskiy Universitet",
+				"Program": "Information systems and technologies",
+				"Type": "undergraduate + graduate ",
+				"Year": 2016
 			}
 		},
 		{
 			"institution": {
-				"School": null,
-				"Program": null,
-				"Type": null,
-				"Year": null
+				"School": "Boston University Metropolitan College",
+				"Program": "Software development",
+				"Type": "Master of science",
+				"Year": 2022
 			}
 		}
 	]
