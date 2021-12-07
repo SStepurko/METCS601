@@ -10,10 +10,15 @@ fetch(myRequest)
         }
     })
     .then(function(data) {
-        const doc = document.getElementById("content");
-        // console.log(data["my_degree"][0]["institution"]);
+        const doc = document.getElementById("myTable");
         for (key in data["my_degree"]) {
-            doc.innerHTML += JSON.stringify(data["my_degree"][key]["institution"]);
+            let row = `<tr>
+                        <td>${data["my_degree"][key]["institution"]["School"]}</td>
+                        <td>${data["my_degree"][key]["institution"]["Program"]}</td>
+                        <td>${data["my_degree"][key]["institution"]["Type"]}</td>
+                        <td>${data["my_degree"][key]["institution"]["Year"]}</td>
+                      </tr>`;
+            doc.innerHTML += row;
             console.log(data["my_degree"][key]);
         }
         console.log(data);
