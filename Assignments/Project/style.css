@@ -1,0 +1,152 @@
+:root {
+    --body-background-color: rgb(241, 241, 241);
+    --body-text-color: rgb(15, 20, 30);
+    --body-font-size: 16px;
+    --body-font-family: "Candara Light", Geneva, Vardana, sans-serif;
+    --block-color-yellow: #fff9dc;
+    --block-color-green: #e5ffe7;
+    --block-color-red: #ffe5e5;
+}
+
+.nav-bar {
+    width: 90vw;
+    padding-left: 5em;
+}
+
+.header-link {
+    max-width: 60em;
+    padding-top: 0.3em;
+    padding-left: 2em;
+    color: darkblue;
+    font: 24px Arial, bold;
+}
+
+header {
+    margin-bottom: 0.1em;
+}
+
+body {
+    background-color: var(--body-background-color);
+    color: var(--body-text-color);
+    font-size: var(--body-font-size);
+    font-family: var(--body-font-family);
+}
+
+.avatar {
+    width: 10em;
+    border-radius: 1em;
+    box-shadow: 0.5em 0.5em 0.5em rgba(0, 0, 0, 25);
+}
+
+.images {
+    width: 10em;
+    border-radius: 1em;
+}
+
+.morph-images {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.container {
+    max-width: 60em;
+    margin: auto;
+    padding-top: 6em;
+}
+
+.block {
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    background-color: lightcyan;
+}
+
+.block-flex {
+    display: flex;
+}
+
+.info-text {
+    margin-left: 4em;
+}
+
+.info-text h2 {
+    margin-left: 0.5em;
+    margin-bottom: 1em;
+}
+
+#about-me, #learn, #my-path {
+    background-color: var(--block-color-green);
+}
+
+#hobby, #social, #current-work {
+    background-color: var(--block-color-yellow);
+}
+
+#work, #employers {
+    background-color: var(--block-color-red);
+}
+
+#social a {
+    color: black;
+    text-decoration: none;
+}
+
+#social a:hover {
+    text-decoration: underline;
+}
+
+#social a:visited {
+    color: gray;
+}
+
+.list {
+    padding: 0 3em;
+    list-style: none;
+}
+
+.list li {
+    margin-bottom: 1em;
+}
+
+.work-table {
+    width: 100%;
+}
+
+.work-table td {
+    padding-bottom: 1em;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.list-item {
+    border: gray solid 1px;
+    border-radius: 0.4em;
+    list-style: none;
+    width: 10em;
+    font-size: 20px;
+    padding-top: 0.5em;
+    padding-bottom: 1em;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.list-item:hover {
+    background-color: gray;
+}
+
+.active {
+    background-color: blue;
+}
+
+@media (max-width: 700px) {
+    .big-picture {
+        max-width: var(--smallScreenWidth);
+    }
+    #about-me {
+        display: block;
+        text-align: center;
+    }
+}

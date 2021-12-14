@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Sergei Stepurko site">
+    <meta name="keywords" content="BU, CS601, web application development course">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dragons</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+</head>
+<body>
+<header>
+    <p class="header-link">Sergei Stepurko</p>
+    <nav class="nav-bar">
+        <a href="index.html" aria-label="Home">Home</a> |
+        <a href=hobby.html aria-label="Hobby">Hobby</a> |
+        <a href=work.html aria-label="Work experience">Work experience</a>
+    </nav>
+</header>
+
+<main>
+    <article class="container">
+
+        <section class="block">
+            <p>
+                I want to talk about morphs.
+                It is important to distinguish the concepts of morphs and colors.
+                Many mistakenly believe that the morph is, first and foremost, the color of bearded dragon. However, it is not.
+            </p>
+        </section>
+
+        <section class="block block-flex">
+            <div id="vue-hover">
+                <img class="images" :src='imgSrc' alt="dragons color" v-on:mouseover="mouseover" v-on:mouseleave="mouseleave">
+            </div>
+
+            <div class="info-text">
+                <p>
+                    According to the colors of beardies, you can study colors and shades.
+                    They are gray, yellow, red, orange, white, and more.
+                    Usually, for ages, owners of agamas call their pets Red, Gold, Orange, Fire-red, and so on.
+                    But by and large, these colors are quite contingent and can change significantly with each molt.
+                </p>
+                <p>
+                    <a href="morphs.html" aria-label="dragon morphs">Dragon morphs</a>
+                </p>
+            </div>
+        </section>
+
+        <section class="block">
+            <p>
+                A morph is a more or less sharp deviation from the main species or subspecies, caused by a sharp change
+                in the external conditions of existence, for example, substrate, food, etc. Or depending on internal
+                reasons. The signs by which the morph differs from the main form are unstable: when the external
+                conditions change, the morph often returns to its original state, inheriting its characters if only the
+                external conditions are preserved.
+            </p>
+        </section>
+
+
+
+    </article>
+
+</main>
+
+<footer>
+    <p><small>Published <time datetime="2021-12-10">10th December 2021</time></small></p>
+</footer>
+<script>
+    new Vue({
+        el: '#vue-hover',
+        data: {
+            imgSrc: './resources/ColorDragons.JPEG'
+        },
+        methods: {
+            mouseover: function(){
+                this.imgSrc = './resources/MorphDragons.JPEG'
+            },
+            mouseleave: function(){
+                this.imgSrc = './resources/ColorDragons.JPEG'
+            }
+        }
+    });
+</script>
+</body>
+</html>
